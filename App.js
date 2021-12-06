@@ -1,12 +1,14 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
+import {SafeAreaView} from 'react-native';
 import Feed from './src/Telas/Feed';
 
-import {SafeAreaView} from 'react-native';
+
 
 function App() {
   return (
     <SafeAreaView>
-      <Feed></Feed>
+      <Feed/>
     </SafeAreaView>
   );
 }
