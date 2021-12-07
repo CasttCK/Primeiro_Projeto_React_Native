@@ -24,19 +24,50 @@ const styles = StyleSheet.create({
       color: '#666',
     },
 
-    pictureOptions:{
-        
-    },
-  
     userPicture:{
       width: '100%',
       height: 400,
     },
   
-    appHeader:{
-      
+    actions:{
+        height: 40,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     },
 
+    postActions:{
+        flexDirection: 'row',
+        width: '30%',
+        alignItems: 'center',
+    },
+
+    likeImage:{
+        width: 25,
+        height: 25,
+        marginLeft: 10,
+    },
+
+    commentImage:{
+        width: 25,
+        height: 25,
+        marginLeft: 10,
+    },
+
+    sendImage:{
+        width: 25,
+        height: 25,
+        marginLeft: 10,
+    },
+
+    postSave:{
+        width: '9%',
+    },
+
+    saveImage:{
+        width: 35,
+        height: 35,
+        padding: 10,
+    },
 });
 
 export default styles;
