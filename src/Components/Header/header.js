@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Image } from 'react-native';
+import {View, Image, TouchableOpacity } from 'react-native';
 import logo from '../../../Assets/IMG/logo.png';
 import camera from '../../../Assets/IMG/camera.png';
 import send from '../../../Assets/IMG/send.png';
@@ -23,12 +23,14 @@ const Header = () => {
                     style= {styles.logoImage}
                 />
            </View>
-           <View style={styles.actions}>
-                <Image
-                    source= {send}
-                    style= {styles.sendImage}
-                />
-           </View>
+           <TouchableOpacity>
+            <View style={styles.actions}>
+                    <Image
+                        source= {send}
+                        style= {styles.sendImage}
+                    />
+            </View>
+           </TouchableOpacity>
         </View>
     );
 };
