@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     header:{
-        backgroundColor: '#F1EDE3',
+        borderBottomWidth: 0.5,
         height: 50,
         paddingHorizontal: 10,
         flexDirection: 'row',
@@ -11,17 +11,19 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    logo:{
-        justifyContent: 'center',
-        width: '50%',
+    cameraImage:{
+        width: 25,
+        height: 25,
     },
 
-    actions:{
-        flexDirection: 'row',
+    logoImage:{
+        width: 100,
+        height: 28,
     },
 
-    igtvImage:{
-        marginLeft: 15,
+    sendImage:{
+        width: 22,
+        height: 22,
     },
 });
 
