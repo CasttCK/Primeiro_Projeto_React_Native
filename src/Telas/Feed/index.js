@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import styles from './style';
-import {View, Text, FlatList, Image} from 'react-native';
-
+import {View, Text, FlatList, Image, TouchableOpacity} from 'react-native';
 import Header from '../../Components/Header/header';
+import options from '../../../Assets/IMG/options.png';
 
 function Feed() {
 
@@ -28,9 +28,15 @@ function Feed() {
             <View style={styles.postHeader}>
               <View >
                 <Text style={styles.infoUser}>{post.user}</Text>
-              </View>
-              <View style={styles.postPlace}>
                 <Text style={styles.infoPlace}>{post.place}</Text>
+              </View>
+              <View style={styles.postOptions}>
+                <TouchableOpacity>
+                  <Image 
+                    source= {options}
+                    style= {styles.pictureOptions}
+                  />
+                </TouchableOpacity>
               </View>
             </View>
             <View>

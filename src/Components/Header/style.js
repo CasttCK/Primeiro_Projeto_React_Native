@@ -1,37 +1,28 @@
 /* eslint-disable prettier/prettier */
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    container: {
-        flexDirection: 'row',
+    header:{
+        backgroundColor: '#F1EDE3',
         height: 50,
-        elevation: 1.5,
+        paddingHorizontal: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
     },
-    iconButton: {
-        height: 30,
-        width: 30,
+
+    logo:{
         justifyContent: 'center',
-        alignItems: 'center'
+        width: '50%',
     },
-    imageButton: {
-        height: 40,
-        width: 40,
-        borderRadius: 50,
+
+    actions:{
+        flexDirection: 'row',
     },
-    borderContainer: { 
-        flex: 1, 
-        justifyContent: 'center',
-        alignItems: 'center' 
+
+    igtvImage:{
+        marginLeft: 15,
     },
-    titleContainer: {
-        flex: 2,
-        justifyContent: 'center',
-    },
-    title: {
-        fontSize: 25,
-        fontWeight: '500',
-        textAlign: 'center',
-    }
 });
 
 export default styles;

@@ -1,34 +1,34 @@
 /* eslint-disable prettier/prettier */
-import React from "react";
-import { Text, TouchableOpacity, View, Image } from "react-native";
-import styles from "./style";
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import React from 'react';
+import {View, Image } from 'react-native';
+import logo from '../../../Assets/IMG/logo.png';
+import like from '../../../Assets/IMG/like.png';
+import igtv from '../../../Assets/IMG/igtv.png';
 
-const Header = ({handleNavigation, iconName, screenTitle}) => {
+import styles from './style';
+
+
+const Header = () => {
     return (
-        <View style={styles.container}>
-            <View style={styles.borderContainer}>
-                <TouchableOpacity 
-                    style={styles.iconButton}
-                    onPress={handleNavigation}
-                >
-                    <FontAwesome name={iconName} size={25} />
-                </TouchableOpacity>
-            </View>
-            <View style={styles.titleContainer}>
-                <Text style={styles.title}>{screenTitle}</Text>
-            </View>
-            <View style={styles.borderContainer}>
-                <TouchableOpacity style={styles.imageButton}>
-                    <Image 
-                        source={{ uri: 'https://gazetadoriopardo.com.br/wp-content/uploads/2019/03/gatos-de-interior.jpg'}} 
-                        style={styles.imageButton}
-                        resizeMode='cover'
-                    />
-                </TouchableOpacity>
-            </View>
+        <View style={styles.header}>
+           <View style={styles.logo}>
+                <Image
+                    source= {logo}
+                    style= {styles.logoImage}
+                />
+           </View>
+           <View style={styles.actions}>
+                <Image
+                    source= {like}
+                    style= {styles.likeImage}
+                />
+                <Image
+                    source= {igtv}
+                    style= {styles.igtvImage}
+                />
+           </View>
         </View>
-    )
+    );
 };
 
 export default Header;
