@@ -7,8 +7,12 @@ import send from '../../../Assets/IMG/send.png';
 
 import styles from './style';
 
+const Header = ({navigation}) => {
 
-const Header = () => {
+    const trocar = () => {
+        navigation.navigate('Direct');
+    };
+
     return (
         <View style={styles.header}>
             <View style={styles.camera}>
@@ -23,7 +27,9 @@ const Header = () => {
                     style= {styles.logoImage}
                 />
            </View>
-           <TouchableOpacity>
+           <TouchableOpacity
+           onPress={() => trocar()}
+           >
             <View style={styles.actions}>
                     <Image
                         source= {send}

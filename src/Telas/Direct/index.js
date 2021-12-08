@@ -1,11 +1,14 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {Text} from 'react-native';
+import HeaderDirect from '../../Components/HeaderDirect/headerDirect';
+import CardDirect from '../../Components/CardDirect/cardDirect.js';
+
 
 function Direct() {
   return (
     <>
-    <Text>Direct</Text>
+    <HeaderDirect />
+    <CardDirect />
     </>
   );
 }

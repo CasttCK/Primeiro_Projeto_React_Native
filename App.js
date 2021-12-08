@@ -1,14 +1,33 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 import Feed from './src/Telas/Feed';
+import Direct from './src/Telas/Direct';
 
-function App() {
+
+const Stack = createStackNavigator();
+
+export default function App() {
   return (
-    <SafeAreaView>
-      <Feed/>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName= "Direct">
+        <Stack.Screen name="Home" component={Feed} />
+        <Stack.Screen name="Direct" component={Direct} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-export default App;
+
+
+
+// function App() {
+//   return (
+//     <SafeAreaView>
+//       <Feed/>
+//     </SafeAreaView>
+//   );
+// }
+
+// export default App;
