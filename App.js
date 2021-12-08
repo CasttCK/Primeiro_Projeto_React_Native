@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName= "Direct">
+      <Stack.Navigator initialRouteName= "Feed">
         <Stack.Screen name="Home" component={Feed} />
         <Stack.Screen name="Direct" component={Direct} />
       </Stack.Navigator>

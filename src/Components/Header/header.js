@@ -1,13 +1,17 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {View, Image, TouchableOpacity } from 'react-native';
+import {useNavigation} from '@react-navigation/core';
+
 import logo from '../../../Assets/IMG/logo.png';
 import camera from '../../../Assets/IMG/camera.png';
 import send from '../../../Assets/IMG/send.png';
 
 import styles from './style';
 
-const Header = ({navigation}) => {
+const Header = () => {
+
+    const navigation = useNavigation();
 
     return (
         <View style={styles.header}>
