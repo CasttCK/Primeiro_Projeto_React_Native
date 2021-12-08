@@ -9,10 +9,6 @@ import styles from './style';
 
 const Header = ({navigation}) => {
 
-    const trocar = () => {
-        navigation.navigate('Direct');
-    };
-
     return (
         <View style={styles.header}>
             <View style={styles.camera}>
@@ -28,7 +24,7 @@ const Header = ({navigation}) => {
                 />
            </View>
            <TouchableOpacity
-           onPress={() => trocar()}
+           onPress={() => navigation.navigate('Direct')}
            >
             <View style={styles.actions}>
                     <Image

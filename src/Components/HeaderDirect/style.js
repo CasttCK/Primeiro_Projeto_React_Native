@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     header:{
-        borderBottomWidth: 0.5,
+        width: '100%',
         height: 50,
         paddingHorizontal: 10,
         flexDirection: 'row',
@@ -11,19 +11,22 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    cameraImage:{
-        width: 25,
-        height: 25,
+    pesquisa:{
+        marginLeft: '5%',
+        marginTop: 8,
+        width: '90%',
+        height: 40,
+        borderRadius: 30,
+        backgroundColor: '#DEDEDE',
+        marginBottom: 10,
+        fontSize: 16,
+        fontWeight: '400',
     },
 
-    logoImage:{
-        width: 100,
-        height: 28,
-    },
-
-    sendImage:{
-        width: 22,
-        height: 22,
+    text:{
+        color: '#000',
+        fontSize: 18,
+        fontWeight: '400',
     },
 });
 

@@ -1,15 +1,23 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Text } from 'react-native';
+import {View, TextInput, Text } from 'react-native';
 
 import styles from './style';
 
 const HeaderDirect = () => {
 
     return (
+        <>
         <View style={styles.header}>
-            <Text>Hello World</Text>
+            <Text style={styles.text}>Bate-papo</Text>
+            <Text style={styles.text}>Ligações</Text>
+            <Text style={styles.text}>Solicitações</Text>
         </View>
+        <TextInput
+        style={styles.pesquisa}
+        placeholder="Pesquisar"
+    />
+    </>
     );
 };
 
